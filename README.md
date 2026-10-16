@@ -4,15 +4,15 @@
 > This kernel is meant to run only on One UI or GSI with stock firmware.
 
 ### Changes in this fork
-* Shipped with `stable` KernelSU Next integrated via Kprobes.
+* Support for [BakaSU](https://bakasu.org) root integration.
+* Support for `stable` & `dev` [KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next) integrated via Kprobes.
 * Enable BTRFS support for mounting external storage.
 
-Builds are done by [a workflow](.github/workflows/build-kernel.yml), so you can [download flashable ZIP from Actions](https://github.com/reddxae/kernel_samsung_sm8550-common-ksu/actions?query=branch%3Aksun-stable-kprobes).
-
-There are also builds available with the [KernelSU Next development branch](https://github.com/reddxae/kernel_samsung_sm8550-common-ksu/actions?query=branch%3Aksun-dev-kprobes).
+Builds are done automatically by the GitHub Actions [workflow](.github/workflows/build-kernel.yml), with flashable AnyKernel3 ZIPs published directly to GitHub [Releases](../../releases) as well as Actions artifacts.
 
 ### Credits
 * AOSP and [@edgars-cirulis](https://github.com/edgars-cirulis) for the kernel source.
+* [Baka-SU](https://github.com/Baka-SU/BakaSU) for BakaSU.
 * [@rifsxd](https://github.com/rifsxd) and community contributors for [KernelSU Next](https://github.com/KernelSU-Next/KernelSU-Next).
 * [@osm0sis](https://github.com/osm0sis/AnyKernel3) for [AnyKernel3](https://github.com/osm0sis/AnyKernel3) and [@edgars-cirulis](https://github.com/edgars-cirulis) for its configuration.
 
