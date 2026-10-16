@@ -174,9 +174,9 @@ jobs:
         shell: bash
         run: |
           (curl -sSfL --retry 3 --connect-timeout 5 \
-            "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/stable/kernel/setup.sh" || \
+            "https://raw.githubusercontent.com/KernelSU-Next/KernelSU-Next/dev/kernel/setup.sh" || \
             { echo "ERROR: Failed to retrieve the KernelSU Next setup script! Aborting." >&2; exit 1; }) | \
-            bash -s stable
+            bash -s
 
           # Filename will include the release tag, since the stable branch normally updates prior to a new release
 
